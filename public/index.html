@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flexboxgrid.css">
+  <link rel="stylesheet" href="css/home.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,9 +25,44 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <section>
-    Hello world! This is HTML5 Boilersectionlate.
-  </section>
+  <header>head</header>
+  <nav>nav</nav>
+  <main class="main container-fluid col-lg-10">
+    <section class="row">
+      <section class="col-lg-12">
+        <header class="box profile-header">
+          <div class="profile-cover">
+            <div class="profile-cover-content">
+              <figure class="profile-avatar">
+                <img class="profile-avatar-image " src="/img/profile_avatar.jpg" />
+              </figure>
+            </div>
+          </div>
+          <nav class="profile-navbar" >
+            <ul class="profile-navbar-menu">
+              <li class="profile-navbar-menu-item">Timeline</li>
+              <li class="profile-navbar-menu-item">About</li>
+              <li class="profile-navbar-menu-item">Friends</li>
+              <li class="profile-navbar-menu-item">Photos</li>
+              <li class="profile-navbar-menu-item">Videos</li>
+              <li class="profile-navbar-menu-item">Friends</li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-lg-4">
+        <div class="box">left content</div>
+      </section>
+      <section class="col-lg-4">
+        <div class="box">center content</div>
+      </section>
+      <section class="col-lg-4">
+        <div class="box">right content</div>
+      </section>
+    </section>
+  </main>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

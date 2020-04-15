@@ -1,0 +1,74 @@
+.main {
+  background: #eaeaea;
+}
+
+.box {
+  background-color: #007fff;
+}
+
+.box-content {
+  position: relative;
+  top: -20px;
+  left: 50px;
+}
+
+.profile-header {
+  position: relative;
+}
+
+.profile-cover {
+  position: relative;
+  width: 100%;
+  height: 305px;
+  background-image: url("/img/profile_cover.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 350px;
+  background-position: 0 -40px;
+}
+
+.profile-cover-content {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -1.25rem;
+  justify-content: center;
+}
+
+.profile-navbar {
+  background-color: #ffffff;
+  padding: 2.5rem 0;
+}
+
+.profile-navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-navbar-menu-item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.profile-avatar {
+  margin: 0;
+  width: 128px;
+  height: 128px;
+}
+
+.profile-avatar-image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-avatar-text {
+
+}
+
+
