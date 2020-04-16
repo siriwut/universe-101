@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/flexboxgrid.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -25,17 +26,34 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header>head</header>
-  <nav>nav</nav>
+  <nav class="nav-bar">
+    <a class="nav-bar-logo"></a>
+    <h1 class="nav-bar-title">Profile Page</h1>
+  </nav>
   <main class="main container-fluid col-lg-10">
     <section class="row">
       <section class="col-lg-12">
         <header class="box profile-header">
           <div class="profile-cover">
             <div class="profile-cover-content">
-              <figure class="profile-avatar">
-                <img class="profile-avatar-image " src="/img/profile_avatar.jpg" />
-              </figure>
+                <figure class="profile-avatar">
+                  <div class="profile-avatar-border" >
+                    <img class="profile-avatar-image " src="/img/profile_avatar.jpg" />
+                  </div>
+                  <figcaption class="profile-avatar-name">Siriwut Ponwapee</figcaption>
+                  <figcaption class="profile-avatar-location">Bangkok, TH</figcaption>
+                </figure>
+                <ul class="profile-activity-menu">
+                  <li class="profile-activity-menu-item is-blue">
+                    <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i>
+                  </li>
+                  <li class="profile-activity-menu-item is-purple">
+                    <i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
+                  </li>
+                  <li class="profile-activity-menu-item is-orange">
+                    <i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+                  </li>
+                </ul>
             </div>
           </div>
           <nav class="profile-navbar" >
@@ -45,7 +63,9 @@
               <li class="profile-navbar-menu-item">Friends</li>
               <li class="profile-navbar-menu-item">Photos</li>
               <li class="profile-navbar-menu-item">Videos</li>
-              <li class="profile-navbar-menu-item">Friends</li>
+              <li class="profile-navbar-menu-item">
+                <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+              </li>
             </ul>
           </nav>
         </header>
