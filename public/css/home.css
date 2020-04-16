@@ -77,6 +77,20 @@
   flex-grow: 1;
   text-align: center;
   line-height: 4rem;
+  color: #9e9e9e;
+}
+
+.profile-navbar-menu-item a {
+  color: #9e9e9e;
+}
+
+.profile-navbar-menu-item a:link {
+  text-decoration: none;
+  color: #9e9e9e;
+}
+
+.profile-navbar-menu-item a:hover {
+  color: #000000;
 }
 
 .profile-avatar {
