@@ -26,9 +26,41 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <nav class="nav-bar">
-    <a class="nav-bar-logo"></a>
-    <h1 class="nav-bar-title">Profile Page</h1>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a class="navbar-logo"></a>
+      <h1 class="navbar-title">Profile Page</h1>
+      <div class="navbar-search">
+        <input class="navbar-search-text" type="text" placeholder="Search people or pages" />
+        <span class="navbar-search-icon">
+          <i class="fa fa-search fa-2x"></i>
+        </span>
+      </div>
+      <span class="navbar-text">Find Friends</span>
+      <div class="navbar-control is-right">
+        <ul class="navbar-activity-menu">
+          <li class="navbar-activity-menu-item">
+            <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i>
+          </li>
+          <li class="navbar-activity-menu-item">
+            <i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
+          </li>
+          <li class="navbar-activity-menu-item">
+            <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+          </li>
+        </ul>
+        <div class="navbar-avatar">
+            <img class="navbar-avatar-image " src="/img/profile_avatar.jpg" />
+            <a class="navbar-avatar-name">
+              <div class="navbar-avatar-title">
+                Siriwut Ponwapee
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
+              <span class="navbar-avatar-job">Software Engineer</span>
+            </a>
+        </div>
+      </div>
+    </div>
   </nav>
   <main class="main container-fluid col-lg-10">
     <section class="row">
@@ -57,28 +89,37 @@
             </div>
           </div>
           <nav class="profile-navbar" >
-            <ul class="profile-navbar-menu">
-              <li class="profile-navbar-menu-item">
-                <a href="#">Timeline</a>
-              </li>
-              <li class="profile-navbar-menu-item">
-                <a href="#">About</a>
-              </li>
-              <li class="profile-navbar-menu-item">
-                <a href="#">Friends</a>
-              </li>
-              <li class="profile-navbar-menu-item">
-                <a href="#">Photos</a>
-              </li>
-              <li class="profile-navbar-menu-item">
-                <a href="#">Videos</a>
-              </li>
-              <li class="profile-navbar-menu-item">
-                <a href="#">
-                  <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
+            <div class="row">
+              <div class="col-lg-5">
+                <ul class="profile-navbar-menu">
+                  <li class="profile-navbar-menu-item">
+                    <a href="#">Timeline</a>
+                  </li>
+                  <li class="profile-navbar-menu-item">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="profile-navbar-menu-item">
+                    <a href="#">Friends</a>
+                  </li>
+                  </li>
+                </ul>
+               </div>
+              <div class="col-lg-5 col-lg-offset-2">
+                <ul class="profile-navbar-menu">
+                <li class="profile-navbar-menu-item">
+                    <a href="#">Photos</a>
+                  </li>
+                  <li class="profile-navbar-menu-item">
+                    <a href="#">Videos</a>
+                  </li>
+                  <li class="profile-navbar-menu-item">
+                    <a href="#">
+                      <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
         </header>
       </section>
