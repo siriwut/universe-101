@@ -20,7 +20,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="is-page-padding-top">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -30,12 +30,12 @@
     <div class="navbar-content">
       <a class="navbar-logo"></a>
       <h1 class="navbar-title">Profile Page</h1>
-      <div class="navbar-search">
+      <form class="navbar-search">
         <input class="navbar-search-text" type="text" placeholder="Search people or pages" />
         <span class="navbar-search-icon">
           <i class="fa fa-search fa-2x"></i>
         </span>
-      </div>
+      </form>
       <span class="navbar-text">Find Friends</span>
       <div class="navbar-control is-right">
         <ul class="navbar-activity-menu">
@@ -62,10 +62,49 @@
       </div>
     </div>
   </nav>
+  <aside class="sidebar">
+    <ul class="sidebar-menu">
+      <li class="sidebar-menu-item">
+        <a href="#">
+           <i class="fa fa-align-justify fa-2x" ></i>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="#">
+          <i class="fa fa-user-circle fa-2x" ></i>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="#">
+          <i class="fa fa-star-o fa-2x" ></i>
+        </a>
+      </li>
+       <li class="sidebar-menu-item">
+        <a href="#">
+          <i class="fa fa-music fa-2x" ></i>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="#">
+           <i class="fa fa-snowflake-o fa-2x" ></i>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="#">
+          <i class="fa fa-calendar fa-2x" ></i>
+        </a>
+      </li>
+      <li class="sidebar-menu-item">
+        <a href="#">
+          <i class="fa fa-birthday-cake fa-2x" ></i>
+        </a>
+      </li>
+    </ul>
+  </aside>
   <main class="main container-fluid col-lg-10">
     <section class="row">
       <section class="col-lg-12">
-        <header class="box profile-header">
+        <header class="profile-header">
           <div class="profile-cover">
             <div class="profile-cover-content">
                 <figure class="profile-avatar">
@@ -125,14 +164,156 @@
       </section>
     </section>
     <section class="row">
-      <section class="col-lg-4">
-        <div class="box">left content</div>
+      <section class="col-lg-3">
+        <div class="post row">
+          <header class="col-lg-12 post-header">
+            <div class="post-avatar">
+              <span class="post-avatar-title">
+                Profile Intro
+              </span>
+            </div>
+            <div class="post-more-actions">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+          </header>
+          <p class="col-lg-12 post-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
       </section>
-      <section class="col-lg-4">
-        <div class="box">center content</div>
+      <section class="col-lg-6">
+        <article class="post row">
+          <header class="col-lg-12 post-header">
+            <div class="post-avatar">
+                <img class="post-avatar-image" src="/img/profile_avatar.jpg" />
+                <a class="post-avatar-name">
+                  <span class="post-avatar-title">
+                    Siriwut Ponwapee
+                  </span>
+                  <span class="post-hours">
+                    15 hours ago
+                  </span>
+                </a>
+            </div>
+            <div class="post-more-actions">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+          </header>
+          <p class="col-lg-12 post-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <hr class="post-line" />
+          <div class="col-lg-12 post-additional-info">
+            <span class="post-number-icon col-lg-1">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <span>8</span>
+            </span>
+            <div class="post-likes col-lg-7">
+              <ul class="post-likes-people">
+                <li class="post-likes-people-item">
+                  <img class="post-likes-people-image" src="/img/user_image_2.jpg" />
+                </li>
+                <li class="post-likes-people-item">
+                  <img class="post-likes-people-image" src="/img/user_image_3.jpg" />
+                </li>
+                <li class="post-likes-people-item">
+                  <img class="post-likes-people-image" src="/img/profile_avatar.jpg" />
+                </li>
+                <li class="post-likes-people-item">
+                  <img class="post-likes-people-image" src="/img/profile_avatar.jpg" />
+                </li>
+                <li class="post-likes-people-item">
+                  <img class="post-likes-people-image" src="/img/profile_avatar.jpg" />
+                </li>
+              </ul>
+              <span>Henry, Robert and 6 more like this</span>
+            </div>
+            <div class="post-comments-and-shares col-lg-4">
+                <span class="post-number-icon">
+                  <i class="fa fa-comment-o" aria-hidden="true"></i>
+                  <span>14</span>
+                </span>
+                <span class="post-number-icon">
+                  <i class="fa fa-mail-forward" aria-hidden="true"></i>
+                  <span>24</span>
+                </span>
+            </div>
+          </div>
+          <ul class="post-actions">
+            <li class="post-actions-item is-yellow">
+              <i class="fa fa-trophy" aria-hidden="true"></i>
+            </li>
+            <li class="post-actions-item is-grey">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </li>
+            <li class="post-actions-item is-grey">
+              <i class="fa fa-comment-o" aria-hidden="true"></i>
+            </li>
+            <li class="post-actions-item is-grey">
+              <i class="fa fa-mail-forward" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </article>
       </section>
-      <section class="col-lg-4">
-        <div class="box">right content</div>
+      <section class="col-lg-3">
+          <div class="post row">
+            <header class="col-lg-12 post-header">
+              <div class="post-avatar">
+                  <img class="post-avatar-image" src="/img/profile_avatar.jpg" />
+                  <a class="post-avatar-name">
+                    <span class="post-avatar-title">
+                      Siriwut Ponwapee
+                    </span>
+                    <span class="post-hours">
+                      15 hours ago
+                    </span>
+                  </a>
+              </div>
+              <div class="post-more-actions">
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              </div>
+            </header>
+            <p class="col-lg-12 post-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <hr class="post-line" />
+            <div class="col-lg-12 post-additional-info">
+              <span class="post-number-icon col-lg-1">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <span>8</span>
+              </span>
+              <div class="post-likes col-lg-7">
+                <ul class="post-likes-people">
+                  <li class="post-likes-people-item">
+                    <img class="post-likes-people-image" src="/img/user_image_2.jpg" />
+                  </li>
+                  <li class="post-likes-people-item">
+                    <img class="post-likes-people-image" src="/img/user_image_3.jpg" />
+                  </li>
+                  <li class="post-likes-people-item">
+                    <img class="post-likes-people-image" src="/img/profile_avatar.jpg" />
+                  </li>
+                  <li class="post-likes-people-item">
+                    <img class="post-likes-people-image" src="/img/profile_avatar.jpg" />
+                  </li>
+                  <li class="post-likes-people-item">
+                    <img class="post-likes-people-image" src="/img/profile_avatar.jpg" />
+                  </li>
+                </ul>
+                <span>Henry, Robert and 6 more like this</span>
+              </div>
+              <div class="post-comments-and-shares col-lg-4">
+                  <span class="post-number-icon">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <span>14</span>
+                  </span>
+                  <span class="post-number-icon">
+                    <i class="fa fa-mail-forward" aria-hidden="true"></i>
+                    <span>24</span>
+                  </span>
+              </div>
+            </div>
+          </div>
       </section>
     </section>
   </main>

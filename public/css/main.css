@@ -18,6 +18,10 @@ html {
   font-family: Helvetica;
 }
 
+body {
+  background: #e2eff3;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
